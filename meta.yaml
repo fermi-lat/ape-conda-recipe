@@ -7,13 +7,13 @@ package:
 
 source:
   git_url: https://github.com/fermi-lat/ape
-  git_rev: ape-recipe
+  git_rev: standalone
 build:
-  number: 0  
+  number: 1
 
 requirements:
   build:
+   - cmake >=3.12
    - readline
-   - xorg-libx11
   run:
    - readline

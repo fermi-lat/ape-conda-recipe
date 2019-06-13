@@ -1,4 +1,5 @@
-cd $SRC_DIR/heacore/BUILD_DIR
-./configure --prefix=$PREFIX
-make
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=${PREFIX}
+make -j ${CPU_COUNT}
 make install
