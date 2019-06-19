@@ -15,5 +15,7 @@ requirements:
   build:
    - cmake >=3.12
    - readline 6.2
+   - ncurses
   run:
    - readline 6.2
+   - ncurses
