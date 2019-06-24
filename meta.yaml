@@ -15,9 +15,9 @@ requirements:
   build:
     #- {{ compiler('c') }}
     - cmake >=3.11
-    - readline <=6.2
-    - ncurses <6
+    - readline <8
+    - ncurses
 
   run:
-    - readline <=6.2
-    - ncurses <6
+    - readline <8
+    - ncurses
