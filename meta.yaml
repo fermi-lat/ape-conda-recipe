@@ -13,11 +13,13 @@ build:
 
 requirements:
   build:
-    #- {{ compiler('c') }}
+    # - {{ compiler('c') }}
+
+  host:
     - cmake >=3.11
-    - readline <=6.2
-    - ncurses <6
+    - ncurses >=6.1,<6.2
+    - readline >=7.0,<8.0
 
   run:
-    - readline <=6.2
-    - ncurses <6
+    - ncurses >=6.1,<6.2
+    - readline >=7.0,<8.0
