@@ -1,5 +1,5 @@
 {% set name = "ape" %}
-{% set version = "2.9.1" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -17,9 +17,9 @@ requirements:
 
   host:
     - cmake >=3.11
-    - ncurses >=6.1,<6.2
-    - readline >=7.0,<8.0
+    - ncurses
+    - readline
 
   run:
-    - ncurses >=6.1,<6.2
-    - readline >=7.0,<8.0
+    - ncurses 
+    - readline 
